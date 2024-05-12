@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CardViewStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    style="@style/CardViewStyle"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginHorizontal="8dp"
     android:layout_marginVertical="4dp"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardBackgroundColor="@color/white"
+    app:cardBackgroundColor="@color/green1"
     app:cardElevation="10dp">
 
     <RelativeLayout
@@ -30,25 +30,25 @@
                 android:text="Title"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/descrTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
                 android:text="Description"
                 android:textColor="@color/black"
-                android:layout_marginVertical="4dp"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/dateTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Date"
                 android:layout_marginVertical="4dp"
-                android:textSize="18sp"/>
+                android:text="Date"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,14 +64,14 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginVertical="4dp"
-                android:src="@drawable/edit_ic"/>
+                android:src="@drawable/edit_ic" />
 
             <ImageView
                 android:id="@+id/deleteImg"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginVertical="4dp"
-                android:src="@drawable/delete_ic"/>
+                android:src="@drawable/delete_ic" />
         </LinearLayout>
     </RelativeLayout>
 
